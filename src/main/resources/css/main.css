@@ -8,6 +8,10 @@
     -fx-font: 20px "Arial";
 }
 
+.text-field:focused {
+    -fx-background-color: #ffffff;
+}
+
 .button {
     -fx-background-color: mediumspringgreen;
     -fx-font: italic bold 16px "Arial";
