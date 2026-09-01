@@ -12,6 +12,12 @@
     -fx-background-color: rgba(255, 0, 0, 0.5) /* red with opacity of 0.5 */
 }
 
+/* this code doesnt have commands so i will add only one variant */
+.cool-label {
+    -fx-background-color: orange;
+    -fx-font: bold
+}
+
 #displayPicture {
     /* Shadow effect on image. */
     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.5, 5, 5);

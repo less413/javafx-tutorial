@@ -36,6 +36,12 @@ public class DialogBox extends HBox {
         displayPicture.setImage(img);
     }
 
+    private void changeDialogStyle(boolean isCool) {
+        if (isCool) {
+            dialog.getStyleClass().add("cool-label");
+        }
+    }
+
     /**
      * Flips the dialog box such that the ImageView is on the left and text on the right.
      */
@@ -49,7 +55,9 @@ public class DialogBox extends HBox {
     }
 
     public static DialogBox getUserDialog(String text, Image img) {
-        return new DialogBox(text, img);
+        var db = new DialogBox(text, img);
+        db.changeDialogStyle(text.equals("hi")); // apply cool label if text is "hi"
+        return db;
     }
 
     public static DialogBox getDukeDialog(String text, Image img) {
