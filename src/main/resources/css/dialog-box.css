@@ -9,6 +9,7 @@
 .reply-label {
     -fx-background-radius: 1em 1em 1em 0;
     -fx-border-radius: 1em 1em 1em 0;
+    -fx-background-color: rgba(255, 0, 0, 0.5) /* red with opacity of 0.5 */
 }
 
 #displayPicture {
